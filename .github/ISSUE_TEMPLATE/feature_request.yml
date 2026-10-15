@@ -1,0 +1,53 @@
+name: Feature request
+description: Propose a new feature or an improvement to an existing one.
+title: "[Feature]: "
+labels: ["type:feature", "status:triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the idea! Focus on the **problem** first — solutions can change, problems rarely do.
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem
+      description: What problem does this solve, and for whom?
+      placeholder: "As a <user type>, I struggle to <task> because <reason>."
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed solution
+      description: What could we build? Rough ideas are fine.
+    validations:
+      required: false
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: Customer quotes, data, support tickets, links — anything that shows this matters.
+    validations:
+      required: false
+
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Expected impact
+      options:
+        - High — affects many users or a key metric
+        - Medium — noticeable improvement for some users
+        - Low — nice to have
+    validations:
+      required: true
+
+  - type: input
+    id: requester
+    attributes:
+      label: Requested by
+      description: Team, customer, or stakeholder who raised this.
+    validations:
+      required: false

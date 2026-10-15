@@ -1,0 +1,59 @@
+name: Bug report
+description: Something is broken or not working as expected.
+title: "[Bug]: "
+labels: ["type:bug", "status:triage"]
+body:
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: Describe the problem in one or two sentences.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      placeholder: |
+        1. Go to ...
+        2. Click ...
+        3. See error ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behaviour
+      description: What should have happened instead?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      options:
+        - Critical — users are blocked, no workaround
+        - Major — key feature broken, workaround exists
+        - Minor — cosmetic or edge case
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Device, browser / app version, account type.
+      placeholder: "iPhone 15, iOS 18, app v3.2.1"
+    validations:
+      required: false
+
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Screenshots or links
+      description: Drag images in here or paste links.
+    validations:
+      required: false

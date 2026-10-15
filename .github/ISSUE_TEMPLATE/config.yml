@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Product specs
+    url: https://github.com/goallia/splash_public/tree/main/specs
+    about: Read existing specs before proposing something new.
+  - name: Decision log
+    url: https://github.com/goallia/splash_public/tree/main/decisions
+    about: Check whether a decision has already been made.
